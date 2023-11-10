@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashScreen">
+
+  <View
+      android:id="@+id/gradiente"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:alpha="0.3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+  </View>
+  <!--test-->
+
+    <ImageView
+        android:id="@+id/backgroundSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/appNameSplash"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/freestyleletteringitalic"
+      android:text="@string/app_name"
+      android:layout_marginBottom="22dp"
+      android:textColor="@color/md_theme_light_inverseOnSurface"
+      android:textSize="39dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/constrainVertical2"
+      app:layout_constraintStart_toStartOf="@+id/constrainVertical1"
+       />
+
+  <ImageView
+      android:id="@+id/logoWorld"
+      android:layout_width="227dp"
+      android:layout_height="289dp"
+      android:layout_marginTop="25dp"
+      android:layout_marginBottom="4dp"
+      android:src="@drawable/baseline_travel_explore_24"
+      app:layout_constraintEnd_toEndOf="@id/constrainVertical2"
+      app:layout_constraintHorizontal_bias="0.416"
+      app:layout_constraintStart_toStartOf="@id/constrainVertical1"
+      app:layout_constraintTop_toTopOf="@+id/gradiente" />
+
+  <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/constrainVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.19951338" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/constrainVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/constrainHorizontal1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/constrainHorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
