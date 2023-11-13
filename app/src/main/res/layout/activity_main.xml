@@ -45,11 +45,15 @@
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/appNameLogin"
-        app:startIconDrawable="@drawable/person_1">
+        app:startIconDrawable="@drawable/person_1"
+        app:startIconTint="@color/buttonChange"
+        >
+
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:hint="username"
             android:inputType="textPersonName"></EditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,11 +67,13 @@
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/usernameInputLogin"
-        app:startIconDrawable="@drawable/password_24">
+        app:startIconDrawable="@drawable/password_24"
+        app:startIconTint="@color/buttonChange">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:hint="password"
             android:inputType="textPersonName"></EditText>
 
