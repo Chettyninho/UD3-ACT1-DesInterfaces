@@ -58,7 +58,7 @@
         android:id="@+id/passwrodInputLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:contentDescription="Campo de contraseña"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -88,6 +88,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
+        android:textColor="@color/md_theme_light_tertiaryContainer"
         android:text="Recuerdame"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -119,6 +120,7 @@
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/textoDeRelleno"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
         />
 
     <Button
@@ -126,16 +128,14 @@
         android:layout_marginHorizontal="40dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="11dp"
         android:text="Registrarse"
         android:stateListAnimator="@animator/button_press_animation"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/loginButton"
-
-        />
-
-
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+         />
 
 
     <androidx.constraintlayout.widget.Guideline

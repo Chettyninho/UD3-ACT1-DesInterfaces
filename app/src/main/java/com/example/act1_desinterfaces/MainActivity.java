@@ -33,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Construye y muestra el AlertDialog
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
                 alertDialogBuilder.setMessage("Sos un pelotudo...?")
                         .setPositiveButton("SiSoy", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 // Lógica al hacer clic en "Aceptar". por ejemplo redirigir a alguna pagina que gestione la recuperacion de contraseña
+                                dialog.dismiss(); //como no programo ninguna lógica cierro el diálogo
                             }
                         })
-                        .setNegativeButton("No olvidé la contraseña", new DialogInterface.OnClickListener() {
+                        .setNegativeButton("No, yo recuerdo la contraseña ", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 // Lógica al hacer clic en "Cancelar", osea ninguna, seguir donde estamos.
                                 dialog.dismiss(); // Cierra el AlertDialog
